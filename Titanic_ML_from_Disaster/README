@@ -1,0 +1,8 @@
+This project builds machine learning models for the very well known Titanic si data set, Titanic: Machine Learning from Disaster (https://www.kaggle.com/c/titanic).
+
+The goal of the model is to predict the survival probability of the passengers given their name, sex, age, ticket, fare, cabin, place of
+embarkment, passenger class, etc.
+
+1. The data is available in the 'titanic_data' folder
+2. Data preprocessing: a number of data preprocessing operation have been carried out to select the more relevant features for the modeling purpose. 
+    i. data having unique features is removed using the function, 'removeUniqueFeature.py'. The reason is, if the the data unique for all the training samples for a particular feature, there is no useful correlation information for the feaute, hence, the entropy is null. This type of data is not useful, so they are removed.  
